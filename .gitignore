@@ -13,3 +13,9 @@
 
 # Avoid your project being littered with annoying .DS_Store files!
 .DS_Store
+
+# folder assets/fonts
+assets/fonts/*
+
+# exclude style guide
+style-guide.md

@@ -37,8 +37,49 @@ body {
 }
 .social-media p {
   font-family: "DM Sans", sans-serif;
-  font-size: 18px;
+  font-size: 0.8rem;
   font-weight: 400;
+  color: hsl(0deg, 0%, 100%);
+}
+
+.double-card h2 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -1.7px;
+  line-height: 21px;
+}
+
+.grid-right-top-right h2 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -1.7px;
+  line-height: 21px;
+}
+.grid-right-top-right p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 15px;
+}
+
+.audience-card h2 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 2.6rem;
+  font-weight: 600;
+}
+.audience-card p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.followers-card h2 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 27px;
   color: hsl(0deg, 0%, 100%);
 }
 
@@ -49,7 +90,7 @@ body {
 }
 
 body {
-  background-color: #969696;
+  background-color: #f5f5f5;
 }
 
 .grid {
@@ -57,7 +98,8 @@ body {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  height: 100vh;
+  min-height: 100vh;
+  margin: 10px 0;
 }
 .grid-left {
   display: flex;
@@ -118,7 +160,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  width: 450px;
+  width: 410px;
   gap: 20px;
   height: 100%;
 }
@@ -129,7 +171,7 @@ body {
   align-items: center;
   gap: 10px;
   background-color: hsl(256deg, 67%, 59%);
-  height: 250px;
+  height: 230px;
   width: 100%;
   padding: 25px;
   border-radius: 10px;
@@ -140,6 +182,233 @@ body {
 }
 .grid-right-top-left .social-media h1, .grid-right-top-left .social-media p {
   text-align: center;
+}
+.grid-right-top-left .double-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  height: 185px;
+  width: 100%;
+}
+.grid-right-top-left .double-card .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 195px;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  padding: 15px;
+}
+.grid-right-top-left .double-card .card:first-child {
+  background-color: hsl(0deg, 0%, 100%);
+}
+.grid-right-top-left .double-card .card:first-child img {
+  height: 50px;
+  padding-left: 5px;
+}
+.grid-right-top-left .double-card .card:last-child {
+  background-color: #ffcb6b;
+}
+.grid-right-top-left .double-card .card:last-child img {
+  width: 100%;
+  margin-top: 10px;
+}
+.grid-right-top-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 190px;
+  gap: 15px;
+  height: 100%;
+  background-color: hsl(254deg, 88%, 90%);
+  border-radius: 10px;
+  padding: 0 15px;
+  overflow: hidden;
+}
+.grid-right-top-right img {
+  height: 250px;
+}
+.grid-right-bottom {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  height: 185px;
+  width: 100%;
+}
+.grid-right-bottom .audience-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 195px;
+  height: 100%;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: hsl(0deg, 0%, 100%);
+}
+.grid-right-bottom .audience-card h2 {
+  display: flex;
+  align-items: center;
+}
+.grid-right-bottom .audience-card h2 span {
+  padding-bottom: 8px;
+}
+.grid-right-bottom .audience-card img {
+  width: 85%;
+  height: auto;
+  margin-top: auto;
+}
+.grid-right-bottom .followers-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 405px;
+  height: 100%;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: hsl(256deg, 67%, 59%);
+  gap: 10px;
+}
+.grid-right-bottom .followers-card img {
+  width: 45%;
+  height: auto;
+}
+
+@media (max-width: 850px) {
+  .grid {
+    flex-wrap: wrap;
+  }
+  .grid-left {
+    order: 2;
+    flex-direction: row;
+  }
+  .grid-right {
+    order: 1;
+  }
+}
+@media (max-width: 630px) {
+  .grid {
+    width: 100%;
+    padding: 25px 20px;
+  }
+  .grid-left {
+    width: 100%;
+    max-width: 392px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .grid-left-top {
+    width: 100%;
+    height: fit-content;
+    padding: 25px 25px 30px 25px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .grid-left-top img {
+    width: 150px;
+    height: auto;
+  }
+  .grid-left-bottom {
+    width: 100%;
+    height: fit-content;
+    padding: 25px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .grid-left-bottom img {
+    width: 162px;
+    height: auto;
+  }
+  .grid-right {
+    width: 100%;
+    max-width: 392px;
+    height: fit-content;
+  }
+  .grid-right-top {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+  }
+  .grid-right-top-left {
+    height: fit-content;
+    align-items: center;
+    width: 100%;
+  }
+  .grid-right-top-left .social-media img {
+    width: 126px;
+  }
+  .grid-right-top-left .double-card {
+    flex-direction: column;
+    justify-content: flex-start;
+    height: fit-content;
+  }
+  .grid-right-top-left .double-card .card {
+    height: fit-content;
+    width: 100%;
+    max-width: 392px;
+    gap: 10px;
+  }
+  .grid-right-top-left .double-card .card:first-child img {
+    max-width: 272px;
+    height: auto;
+  }
+  .grid-right-top-left .double-card .card:last-child {
+    padding-bottom: 0;
+    max-height: 200px;
+  }
+  .grid-right-top-left .double-card .card:last-child img {
+    max-width: 189px;
+    height: auto;
+  }
+  .grid-right-top-right {
+    height: fit-content;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 25px 15px;
+    text-align: center;
+  }
+  .grid-right-top-right img {
+    width: 100%;
+    height: auto;
+  }
+  .grid-right-bottom {
+    flex-direction: column;
+    height: fit-content;
+  }
+  .grid-right-bottom .audience-card {
+    order: 2;
+    width: 100%;
+  }
+  .grid-right-bottom .audience-card img {
+    margin-top: 20px;
+    width: 140.25px;
+    height: auto;
+  }
+  .grid-right-bottom .followers-card {
+    order: 1;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 30px;
+    padding: 25px 50px;
+  }
+  .grid-right-bottom .followers-card h2 {
+    text-align: center;
+  }
+  .grid-right-bottom .followers-card img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
