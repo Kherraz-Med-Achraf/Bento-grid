@@ -1,0 +1,61 @@
+$font-family-main: "DM Sans", sans-serif;
+$font-size-normal: 18px;
+$font-size-big: 1.8rem;
+$font-size-bigger: 2.6rem;
+$font-weight-normal: 400;
+$font-weight-medium: 600;
+
+
+
+body {
+  font-family: $font-family-main;
+}
+
+
+.grid-left-top {
+h2 {
+    font-family: $font-family-main;
+    font-size: $font-size-big;  
+    font-weight: $font-weight-medium;
+    letter-spacing: -1.7px;
+    line-height: 25px;
+    span {
+        font-style: italic;
+        color: $purple-500;
+    }
+}
+}
+
+.grid-left-bottom {
+h2 {
+    font-family: $font-family-main;
+    font-size: $font-size-big;  
+    font-weight: $font-weight-medium;
+    letter-spacing: -1.7px;
+    line-height: 25px;
+}
+}
+
+.social-media {
+    h1 {
+        font-family: $font-family-main;
+        font-size: $font-size-bigger;  
+        font-weight: $font-weight-normal;
+        color: $white;
+        line-height: 40px;
+        span {
+            &:first-child {
+                color: $yellow-500;
+            }
+            &:last-child {
+                font-style: italic;
+            }
+        }
+    }
+    p {
+        font-family: $font-family-main;
+        font-size: $font-size-normal;  
+        font-weight: $font-weight-normal;
+        color: $white;
+    }
+}

@@ -1,0 +1,117 @@
+@import "./_base.scss";
+@import "./_typo.scss";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #969696;
+}
+
+
+.grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: $grid-gap;
+    height: 100vh;
+    &-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: $grid-gap;
+        &-top {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 190px;
+            padding: 0 20px;
+            background-color: $yellow-100;
+            gap: 10px;
+            border-radius: $border-radius-size;
+            height: 310px;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        &-bottom {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 190px;
+            padding: 15px 10px 15px 18px;
+            background-color: $yellow-500;
+            gap: 10px;
+            border-radius: $border-radius-size;
+            height: 310px;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+    &-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: $grid-gap;
+        height: 640px;
+        &-top {
+           display: flex;
+           justify-content: flex-start;
+           align-items: flex-start;
+           gap: $grid-gap;
+           height: 435px;
+           &-left {
+               display: flex;
+               flex-direction: column;
+               justify-content: flex-start;
+               align-items: flex-start;
+               width: 450px;
+               gap: $grid-gap;
+               height: 100%;
+               .social-media {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                    background-color: $purple-500;
+                    height: 250px;
+                    width: 100%;
+                    padding: 25px;
+                    border-radius: $border-radius-size;
+                    img {
+                        width: 35%;
+                        height: auto;
+                    }
+                    h1, p {
+                        text-align: center;  
+                    }
+
+                }
+           }
+        }
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
