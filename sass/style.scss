@@ -18,7 +18,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: $grid-gap;
-    min-height: 100vh;
+    min-height: 90vh;
     margin: 10px 0;
     &-left {
         display: flex;
@@ -191,9 +191,6 @@ body {
                 padding: 15px;
                 background-color: $purple-500;
                 gap: 10px;
-                h2 {
-                    
-                }
                 img {
                     width: 45%;
                     height: auto;
@@ -348,6 +345,12 @@ body {
     }
 }
 
+
+
+.attribution {
+    font-size: $font-size-medium;
+    text-align: center;
+}
 
 
 
