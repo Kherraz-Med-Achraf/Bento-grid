@@ -28,8 +28,8 @@ The challenge was to build out a Bento grid layout that adjusts based on screen 
 
 ### Screenshot
 
-![Desktop version](./Screenshot - desktop - Frontend Mentor Bento grid.png)
-![Mobile version](./Screenshot - mobile - Frontend Mentor Bento grid.png)
+![Desktop version](./Screenshot%20-%20desktop%20-%20Frontend%20Mentor%20Bento%20grid.png)
+![Mobile version](./Screenshot%20-%20mobile%20-%20Frontend%20Mentor%20Bento%20grid.png)
 
 ### Links
 
